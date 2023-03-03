@@ -1,0 +1,68 @@
+menu,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: block;
+  border-radius: 4px;
+  padding: 1em 2em;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border-width: 0;
+  font-size: 1.1rem;
+
+  &:active {
+    transform: scale(1.03);
+  }
+
+  &.primary {
+    background-color: $c-brightred;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: $c-lightblue;
+    color: $c-darkblue;
+  }
+  &.third {
+    background-color: #8acfe5;
+    color: white;
+  }
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 1.2em rgba(0, 0, 0, 0.3);
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 0.6em;
+
+  .star_from_div {
+    display: flex;
+  }
+  .star_to_div {
+    display: flex;
+  }
+
+  .rating-star {
+    list-style-type: none;
+    width: 23px;
+    height: 26px;
+    background-image: url(star-inactive.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.active {
+      background-image: url(star-active.png);
+    }
+
+    &.half {
+      background-image: url(star-half.png);
+    }
+  }
+}
