@@ -1,7 +1,6 @@
 {
   "name": "02-esc",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --no-source-map src/main.scss static/main.css",
@@ -11,7 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserstack-cypress-cli": "^1.20.0",
     "cypress": "^12.7.0",
     "sass": "^1.56.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liber09/Escape_cypress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liber09/Escape_cypress/issues"
+  },
+  "homepage": "https://github.com/liber09/Escape_cypress#readme",
+  "description": ""
 }
